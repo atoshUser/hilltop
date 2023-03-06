@@ -1,0 +1,169 @@
+@import "//utils/_mixin.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+ background-image: url(/assets/img/header-banner.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+ height: 1080px;
+
+
+
+}
+
+
+
+.header__box {
+display: flex;
+align-items:center;
+justify-content: space-between;
+   border-bottom: 1px solid #D0C7C7;
+   padding-bottom: 5px;
+   margin-bottom: 152px;
+}
+
+.logo {
+  display: flex;
+  align-items:center;
+  gap: 20px;
+}
+
+.logo-text{
+  display: inline-block;
+font-weight: bold;
+font-size: 46px;
+color:$bodyItemTextColor;
+align-self: flex-end;
+}
+.header__nav {
+  align-self:flex-end;
+}
+.header__list {
+  display: flex;
+  align-items:center;
+  list-style: none;
+  gap: 20px;
+
+}
+
+
+.header__item {
+  display: flex;
+ gap: 10px;
+ align-items:center;
+ border: 2px solid  transparent;
+   border-radius: 12px;
+  padding: 0 10px;
+  transition: border 0.4s ease,
+   box-shadow 0.4s ease;
+
+    &:first-child::before{
+       @include psevdoClass($img:url(/assets/icon/icon-way.svg));
+
+   }
+
+   &:nth-child(2)::before{
+     @include psevdoClass($img:url(/assets/icon/icon-cta.svg));
+   }
+
+    &:nth-child(3)::before{
+      @include psevdoClass($img: url(/assets/icon/icon-man.svg));
+    }
+
+
+    &:hover{
+      border: 2px solid #f6c85d;
+      box-shadow: 0 8px 20px rgb(255, 255, 255,0.7);
+    }
+}
+
+
+
+.header__link {
+  display:block;
+  text-decoration: none;
+  color:$bodyItemTextColor;
+  font-size: 24px;
+  font-weight: 500;
+   padding-top: 10px;
+   padding-bottom: 10px;
+
+
+
+}
+.header__info {
+  display: flex;
+  flex-direction: column;
+  align-self:center;
+  text-align: center;
+}
+.header__heading {
+  font-weight: 700;
+  font-size: 120px;
+  color:$bodyItemTextColor;
+}
+.header__subtitle {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 86px;
+  color:$bodyItemTextColor;
+}
+.list {
+  display: grid;
+   grid-template-columns: repeat(5, 180px);
+   grid-auto-rows: 66px;
+   list-style: none;
+   gap: 20px;
+   align-self: center;
+   margin-bottom: 36px;
+}
+.list__item {
+  padding: 20px 40px;
+  background-color: $cardsColor;
+  border-radius:10px;
+  text-transform: uppercase;
+}
+.list__link {
+  text-decoration: none;
+  color:$bodyTextColor;
+  font-weight: 700;
+}
+.form {
+}
+.form__list {
+  display: flex;
+  list-style: none;
+  align-items:center;
+  gap: 20px;
+
+
+  .form__item:nth-child(1){
+     width: 220px;
+}
+.form__item:nth-child(2){
+ width: 220px;
+}
+      .form__item:nth-child(3){
+           @include input;
+      }
+      .form__item:nth-child(4){
+           @include input;
+      }
+      .form__item:nth-child(5){
+           @include input;
+      }
+}
+.form__item {
+  padding: 10px 15px;
+  background-color:$bodyItemTextColor;
+}
+.btn {
+}
+.header__footer {
+}
+.header___footer-item {
+}
+.header__footer_text {
+}

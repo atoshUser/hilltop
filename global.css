@@ -1,3 +1,181 @@
+@import "//utils/_mixin.scss";
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/img/header-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 1080px;
+}
+
+.header__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #D0C7C7;
+  padding-bottom: 5px;
+  margin-bottom: 152px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-text {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 46px;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.header__nav {
+  align-self: flex-end;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.header__item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 0 10px;
+  transition: border 0.4s ease, box-shadow 0.4s ease;
+}
+.header__item:first-child::before {
+  display: block;
+  width: 25px;
+  height: 25px;
+  content: " ";
+  background-image: url(/assets/icon/icon-way.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header__item:nth-child(2)::before {
+  display: block;
+  width: 25px;
+  height: 25px;
+  content: " ";
+  background-image: url(/assets/icon/icon-cta.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header__item:nth-child(3)::before {
+  display: block;
+  width: 25px;
+  height: 25px;
+  content: " ";
+  background-image: url(/assets/icon/icon-man.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header__item:hover {
+  border: 2px solid #f6c85d;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.7);
+}
+
+.header__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+
+.header__heading {
+  font-weight: 700;
+  font-size: 120px;
+  color: #fff;
+}
+
+.header__subtitle {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 86px;
+  color: #fff;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
+  grid-auto-rows: 66px;
+  list-style: none;
+  gap: 20px;
+  align-self: center;
+  margin-bottom: 36px;
+}
+
+.list__item {
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.list__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+
+.form__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+.form__list .form__item:nth-child(1) {
+  width: 220px;
+}
+.form__list .form__item:nth-child(2) {
+  width: 220px;
+}
+.form__list .form__item:nth-child(3) {
+  width: 140px;
+}
+.form__list .form__item:nth-child(3) input {
+  width: 100%;
+}
+.form__list .form__item:nth-child(4) {
+  width: 140px;
+}
+.form__list .form__item:nth-child(4) input {
+  width: 100%;
+}
+.form__list .form__item:nth-child(5) {
+  width: 140px;
+}
+.form__list .form__item:nth-child(5) input {
+  width: 100%;
+}
+
+.form__item {
+  padding: 10px 15px;
+  background-color: #fff;
+}
+
 @font-face {
   font-family: "Inter";
   src: url("./assets/fonts/Inter-Regular.woff2") format("woff2"), url("./assets/fonts/Inter-Regular.woff") format("woff");
