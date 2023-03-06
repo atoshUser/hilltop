@@ -1,0 +1,66 @@
+@import "./styles/utils/mixin";
+@import "./styles/utils/variables";
+@import "./styles/section/header";
+@import "./styles/section/hero";
+@import "./styles/section/features";
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/') format('woff2'),
+      url('./assets/fonts/Inter-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Medium.woff2') format('woff2'),
+      url('./assets/fonts/Inter-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html{
+  height: 100vh;
+}
+
+body{
+  display: flex;
+   height: 100%;
+  flex-direction: column;
+  font-family: "Inter","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+   background-color: $bodyColor;
+   color: $bodyTextColor;
+}
+
+.container{
+  width: 100%;
+max-width: 1640px;
+padding-left: 140px;
+padding-right: 140px;
+margin-left: auto;
+margin-right: auto;
+}
