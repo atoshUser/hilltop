@@ -270,6 +270,94 @@
   font-weight: bold;
 }
 
+.hero__box {
+  padding-top: 180px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__divider {
+  height: 3px;
+  width: 260px;
+  background-color: #ECA00D;
+  border: 0;
+}
+
+.second__divider {
+  width: 800px;
+  height: 1px;
+  background-color: rgba(224, 230, 232, 0.7);
+  border: 0;
+  margin-bottom: 60px;
+}
+
+.hero__list {
+  display: flex;
+  list-style: none;
+  gap: 38px;
+}
+
+.hero__item {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  flex-grow: 1;
+}
+.hero__item:first-child::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: " ";
+  background-image: url(/assets/icon/icon-ship.svg);
+  background-repeat: no-repeat;
+  background-size: 45px 45px;
+  background-position: left top;
+  background-color: #ECA00D;
+  position: absolute;
+}
+.hero__item:nth-child(2)::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: " ";
+  background-image: url(/assets/icon/icon-aviator.svg);
+  background-repeat: no-repeat;
+  background-size: 45px 45px;
+  background-position: left top;
+  background-color: #ECA00D;
+  position: absolute;
+}
+.hero__item:last-child::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  content: " ";
+  background-image: url(/assets/icon/icon-boat.svg);
+  background-repeat: no-repeat;
+  background-size: 45px 45px;
+  background-position: left top;
+  background-color: #ECA00D;
+  position: absolute;
+}
+
+.hero__item-footer {
+  padding: 48px 30px;
+}
+.hero__item-footer h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* Retina-specific stuff here */
+  .header {
+    background-image: url(/assets/img/header-banner@2x.png);
+  }
+}
 @font-face {
   font-family: "Inter";
   src: url("./assets/fonts/Inter-Regular.woff2") format("woff2"), url("./assets/fonts/Inter-Regular.woff") format("woff");
