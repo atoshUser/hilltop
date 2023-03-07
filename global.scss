@@ -96,8 +96,14 @@ margin-right: auto;
 
  }
  .img-2{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 15px;
+  color:$bodyItemTextColor;
+  font-size: 20px;
    width: 655px;
    height: 528px;
+   text-align: center;
    background-image:url(/assets/img/img-opacity.jpg);
    background-repeat: no-repeat;
    background-size: cover;
