@@ -7,7 +7,7 @@
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center center;
- height: 1080px;
+ height: 1130px;
 
 
 
@@ -19,7 +19,7 @@
 display: flex;
 align-items:center;
 justify-content: space-between;
-   border-bottom: 1px solid #D0C7C7;
+   border-bottom: 2px solid #D0C7C7;
    padding-bottom: 5px;
    margin-bottom: 152px;
 }
@@ -131,6 +131,7 @@ align-self: flex-end;
   font-weight: 700;
 }
 .form {
+  margin-bottom: 140px;
 }
 .form__list {
   display: flex;
@@ -146,7 +147,14 @@ align-self: flex-end;
  width: 220px;
 }
       .form__item:nth-child(3){
+        display: flex;
+        flex-direction:column;
            @include input;
+           align-self: flex-end;
+
+            select{
+              width: 100%;
+            }
       }
       .form__item:nth-child(4){
            @include input;
@@ -156,14 +164,88 @@ align-self: flex-end;
       }
 }
 .form__item {
-  padding: 10px 15px;
-  background-color:$bodyItemTextColor;
+color:$bodyItemTextColor;
+text-align: start;
+      input{
+        padding: 15px 10px;
+          border: 0;
+      }
+
+      select{
+        padding: 15px 10px;
+        align-self: flex-end;
+      }
+
+      &:last-child{
+        align-self: flex-end;
+
+      }
 }
 .btn {
+  padding: 15px 50px;
+  color: $bodyTextColor;
+  font-weight: 700;
+  background-color: $btn-bgColor;
+  border: 0;
 }
 .header__footer {
+  background-color: rgb(208, 199, 199,0.7);
+
+}
+.header__footer-box{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 .header___footer-item {
+
+       &:nth-child(1){
+
+        padding: 10px;
+          ::before {
+            display: block;
+            content: " ";
+            width: 28px;
+          height: 32px;
+          background-image: url(/assets/icon/icon-earth.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          }
+       }
+       &:nth-child(2){
+
+        padding: 10px;
+          ::before {
+            display: block;
+            content: " ";
+            width: 28px;
+          height: 32px;
+          background-image: url(/assets/icon/icon-checked.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          }
+       }
+       &:nth-child(3){
+
+        padding: 10px;
+          ::before {
+            display: block;
+            content: " ";
+            width: 33px;
+          height: 32px;
+          background-image: url(/assets/icon/icon-student.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          }
+       }
+
 }
 .header__footer_text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
 }

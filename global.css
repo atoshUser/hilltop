@@ -6,14 +6,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 1080px;
+  height: 1130px;
 }
 
 .header__box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #D0C7C7;
+  border-bottom: 2px solid #D0C7C7;
   padding-bottom: 5px;
   margin-bottom: 152px;
 }
@@ -140,6 +140,10 @@
   font-weight: 700;
 }
 
+.form {
+  margin-bottom: 140px;
+}
+
 .form__list {
   display: flex;
   list-style: none;
@@ -153,9 +157,15 @@
   width: 220px;
 }
 .form__list .form__item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
   width: 140px;
+  align-self: flex-end;
 }
 .form__list .form__item:nth-child(3) input {
+  width: 100%;
+}
+.form__list .form__item:nth-child(3) select {
   width: 100%;
 }
 .form__list .form__item:nth-child(4) {
@@ -172,8 +182,83 @@
 }
 
 .form__item {
-  padding: 10px 15px;
-  background-color: #fff;
+  color: #fff;
+  text-align: start;
+}
+.form__item input {
+  padding: 15px 10px;
+  border: 0;
+}
+.form__item select {
+  padding: 15px 10px;
+  align-self: flex-end;
+}
+.form__item:last-child {
+  align-self: flex-end;
+}
+
+.btn {
+  padding: 15px 50px;
+  color: #000;
+  font-weight: 700;
+  background-color: #ECA00D;
+  border: 0;
+}
+
+.header__footer {
+  background-color: rgba(208, 199, 199, 0.7);
+}
+
+.header__footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.header___footer-item:nth-child(1) {
+  padding: 10px;
+}
+.header___footer-item:nth-child(1) ::before {
+  display: block;
+  content: " ";
+  width: 28px;
+  height: 32px;
+  background-image: url(/assets/icon/icon-earth.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header___footer-item:nth-child(2) {
+  padding: 10px;
+}
+.header___footer-item:nth-child(2) ::before {
+  display: block;
+  content: " ";
+  width: 28px;
+  height: 32px;
+  background-image: url(/assets/icon/icon-checked.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header___footer-item:nth-child(3) {
+  padding: 10px;
+}
+.header___footer-item:nth-child(3) ::before {
+  display: block;
+  content: " ";
+  width: 33px;
+  height: 32px;
+  background-image: url(/assets/icon/icon-student.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__footer_text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
 }
 
 @font-face {

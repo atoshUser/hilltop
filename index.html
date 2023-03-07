@@ -12,12 +12,12 @@
 </head>
 <body>
 
-      <header class="header container">
-             <div class="header__box ">
-                  <span class="logo">
+      <header class="header ">
+             <div class="header__box container">
+                  <div class="logo">
                        <img src="./assets/icon/site-logo.svg" alt="site-logo" width="86" height="86">
                         <h3 class="logo-text">HillTop</h3>
-                  </span>
+                  </div>
                       <nav class="header__nav">
                         <ul class="header__list">
                              <li class="header__item"><a class="header__link" href="#">My Tripe</a></li>
@@ -26,7 +26,7 @@
                         </ul>
                       </nav>
                     </div>
-                      <div class="header__info">
+                      <div class="header__info container">
                           <h1 class="header__heading">Peace of mind</h1>
                            <h2 class="header__subtitle">Find your destiny</h2>
                           <ul class="list">
@@ -48,7 +48,27 @@
                                        </li>
                                        <li class="form__item">
                                           <label for="number-room">Rooms</label>
-                                             <input type="number" id="number-room" required>
+                                             <!-- <input type="number" id="number-room" required> -->
+                                               <select name="Number of room" id="number-room">
+                                                    <optgroup label="standart">
+                                                       <option value="1">1</option>
+                                                       <option value="3">4</option>
+                                                       <option value="5">5</option>
+                                                       <option value="6">6</option>
+                                                       <option value="7">7</option>
+                                                       <option value="8">8</option>
+                                                       <option value="9">9</option>
+                                                    </optgroup>
+                                                    <optgroup label="Premium">
+                                                      <option value="1">1</option>
+                                                      <option value="3">4</option>
+                                                      <option value="5">5</option>
+                                                      <option value="6">6</option>
+                                                      <option value="7" disabled>7</option>
+                                                      <option value="8">8</option>
+                                                      <option value="9">9</option>
+                                                    </optgroup>
+                                               </select>
                                        </li>
                                        <li class="form__item">
                                           <label for="number-adults">Adults</label>
@@ -66,18 +86,20 @@
                             </form>
                       </div>
 
-                       <footer class="header__footer">
-                              <span class="header___footer-item">
-                                 <p class="header__footer_text">30,000+ Things to do </p>
-                              </span>
-                              <span class="header___footer-item">
-                                 <p class="header__footer_text">3,000+ Tour operators</p>
-                              </span>
-                              <span class="header___footer-item">
-                                 <p class="header__footer_text">Certified agents</p>
-                              </span>
-                       </footer>
 
+                      <div class="header__footer">
+                        <div class="header__footer-box container">
+                           <div class="header___footer-item">
+                              <p class="header__footer_text">30,000+ Things to do </p>
+                           </div>
+                           <div class="header___footer-item">
+                              <p class="header__footer_text">3,000+ Tour operators</p>
+                           </div>
+                           <div class="header___footer-item">
+                              <p class="header__footer_text">Certified agents</p>
+                           </div>
+                        </div>
+                 </div>
       </header>
 </body>
 </html>
